@@ -48,7 +48,7 @@ pip install -r requirements.txt
 uvicorn app:app --reload
 ```
 
-伺服器將會在 `http://127.0.0.1:8000` 上運行。`--reload` 參數會讓伺服器在您修改程式碼後自動重啟，非常適合開發。
+伺服器將會在 `http://127.0.0.1:8010` 上運行。`--reload` 參數會讓伺服器在您修改程式碼後自動重啟，非常適合開發。
 
 ---
 
@@ -76,11 +76,11 @@ uvicorn app:app --reload
 **範例請求 (cURL):**
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/evaluate" \
+curl -X POST "http://127.0.0.1:8010/evaluate" \
 -H "Content-Type: application/json" \
 -d '{"ck_value": 250.5, "transaminase": 35.0, "bilirubin": 1.2, "muscle_symptoms": false}'
 ```
 
 ### 互動式 API 文件
 
-當伺服器運行時，您可以直接在瀏覽器中訪問 http://127.0.0.1:8000/docs 來查看由 FastAPI 自動生成的互動式 Swagger UI 文件。您可以在此頁面上直接測試所有 API 端點。
+當伺服器運行時，您可以直接在瀏覽器中訪問 http://127.0.0.1:8010/docs 來查看由 FastAPI 自動生成的互動式 Swagger UI 文件。您可以在此頁面上直接測試所有 API 端點。

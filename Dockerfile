@@ -18,10 +18,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the port the app runs on
-EXPOSE 8000
+EXPOSE 8010
 
 # Command to run the application in production using Gunicorn
 # -w 4: Spawns 4 worker processes. Adjust as needed.
 # -k uvicorn.workers.UvicornWorker: Uses Uvicorn's worker class for ASGI.
-# -b 0.0.0.0:8000: Binds to all network interfaces on port 8000.
-CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "main:app", "-b", "0.0.0.0:8000"]
+# -b 0.0.0.0:8010: Binds to all network interfaces on port 8010.
+CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "main:app", "-b", "0.0.0.0:8010"]
