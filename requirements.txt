@@ -1,0 +1,11 @@
+# --- Core Application ---
+fastapi
+
+# --- ASGI/WSGI Servers ---
+# For development (uvicorn) and production (gunicorn)
+uvicorn[standard]
+gunicorn
+
+# --- Utilities ---
+# For loading environment variables from a .env file
+python-dotenv
