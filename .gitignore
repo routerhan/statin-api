@@ -1,56 +1,37 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Flask instance folder
-instance/
-
 # Environments
-.env
-.venv
-env/
+# 忽略虛擬環境目錄，這在 README 中有提到
 venv/
-ENV/
-env.bak
-venv.bak
+.venv/
+env/
+.env
 
-# macOS
+# Python cache
+# 忽略 Python 解譯器產生的快取檔案和位元組碼
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE / Editor specific files
+# 忽略常用編輯器和 IDE 的設定檔
+.vscode/
+.idea/
 .DS_Store
 
+# Build and distribution artifacts
+# 忽略套件打包和建置過程中產生的檔案
+build/
+dist/
+*.egg-info/
 
-# SQLite databases
-*.db
-*.db-journal
+# Test artifacts
+# 忽略測試工具 (如 pytest) 產生的快取和報告
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+.ipynb_checkpoints
 
-# Yoyo backup/snapshot directory
-.yoyo/
-
-*.spec
+# Log files
+*.log
