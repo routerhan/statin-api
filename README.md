@@ -45,7 +45,7 @@ pip install -r requirements.txt
 使用 Uvicorn 來啟動 API 伺服器：
 
 ```bash
-uvicorn app:app --reload
+uvicorn app:app --reload --port 8010
 ```
 
 伺服器將會在 `http://127.0.0.1:8010` 上運行。`--reload` 參數會讓伺服器在您修改程式碼後自動重啟，非常適合開發。
